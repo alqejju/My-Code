@@ -18,6 +18,6 @@ int main(int argc, char const *argv[])
         
     }
     
-    cout << endl << "Git Test Ora kenek";
+    cout << endl << "Git Test";
     return 0;
 }
