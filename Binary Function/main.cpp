@@ -107,6 +107,6 @@ int main()
         
     } while (var > 3);
     system("pause"); // This Function is for Pause on console when Program finish Executed.
-    // AKU GAE GITHUB, SEWENGI KESIO SIO
+    // AKU GAE GITHUB, SEWENGI KESIO SIO TIWAS SUE SUE UTEK UTEK
     return bin(n);
 }
