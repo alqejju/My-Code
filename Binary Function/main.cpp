@@ -45,11 +45,11 @@ double bin(int n)
 double binToDec(double n)
 {
     //Converting Binary number to Decimal
-    int num = n,base = 1,temp = num;
+    int num = n,base = 1,temp = num,last_digit;
     double decimal = 0;
 
     while (temp) {
-        int last_digit = temp % 10;
+        last_digit = temp % 10;
         temp = temp / 10;
         decimal += last_digit * base;
         base = base * 2;
@@ -108,5 +108,5 @@ int main()
     } while (var > 3);
     system("pause"); // This Function is for Pause on console when Program finish Executed.
     // AKU GAE GITHUB, SEWENGI KESIO SIO TIWAS SUE SUE UTEK UTEK
-    return bin(n);
+    return 0;
 }
