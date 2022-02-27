@@ -21,13 +21,13 @@ int main(int argc, char const *argv[])
     char present[1][idx],presentPrint[idx];
     int nim[idx],lineLength = 0;
     nim[0] = 21816001;
-    cout << "y / n for present input" << endl; 
 
     for (int i = 0; i < idx; i++)
     {
         nim[i+1] = nim[i] + 1;
         do
         {
+            cout << "y / n for present input" << endl; 
             cout << "Apakah " << name[i] << " Hadir hari ini ? "; cin >> present[0][i];system("CLS");
 
         } while (!(present[0][i] == 'y' || present[0][i] == 'n'));
