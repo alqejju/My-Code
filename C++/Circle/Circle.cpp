@@ -68,7 +68,7 @@ int main(int argc, char const *argv[])
             cout << " * ";
         } else
         {
-            cout << " . ";
+            cout << "   ";
         }
         horizon++;angle = 0; 
         if (horizon == x)
