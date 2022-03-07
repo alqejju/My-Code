@@ -3,13 +3,11 @@
 
 using namespace std;
 
-int main()
+int matrixAB(int columnA,int rowA,int columnB,int rowB)
 {
-    int column,row,parameter = 0,parameterEnd = 0;
-    cout << "Input your Matrix A row size : ";cin >> row; cout << "Input your Matrix A column size : ";cin >> column;
+    int column = columnA,row = rowA,parameter = 0,parameterEnd = 0;
+    
     int number[column][row];
-
-    cout << endl << "Matrix A = " << endl;
     for (int a = 0; a < column; a++)
     {
         for (int b = 0; b < row; b++)
@@ -37,6 +35,14 @@ int main()
             }parameterEnd = 0; 
         } 
     }
+    return 0;
+};
 
+int main()
+{
+    int columnA,rowA,columnB,rowB;
+    cout << "Input your Matrix A row size : ";cin >> rowA; cout << "Input your Matrix A column size : ";cin >> columnA;
+    cout << "Input your Matrix B row size : ";cin >> rowB; cout << "Input your Matrix B column size : ";cin >> columnB;system("CLS");
+    matrixAB(columnA,rowA,columnB,rowB);
     return 0;
 }
