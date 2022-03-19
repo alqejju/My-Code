@@ -11,6 +11,11 @@ public class belajar {
         int b = input.nextInt();
         System.out.print("Your Input Variable is : ");;System.out.print(b);
 
+        for (int i = 0;i < 100;i++){
+
+            System.out.println("Hello Word !!!");
+        }
+
         input.close();
     }
     
