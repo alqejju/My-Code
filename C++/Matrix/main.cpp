@@ -12,7 +12,7 @@ int matrixAB(int columnA,int rowA,int columnB,int rowB)
     {
         for (int b = 0; b < row; b++)
         {
-            cout << "[ "; cin >> setw(3) >> right >> number[a][b];system("CLS");
+            cout << "[  "; cin >> setw(3) >> right >> number[a][b];system("CLS");
             parameter++;
             for (int c = 0; c < column; c++)
             {
