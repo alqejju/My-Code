@@ -22,7 +22,7 @@ public class prima {
                         }
                     }
                     if (b >= a/2 || a <= 3) {
-                        //System.out.print(a + " ");
+                        System.out.print(a + " ");
                     }
             }   
         }

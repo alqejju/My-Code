@@ -20,7 +20,7 @@ public class prima {
                         }
                     }
                     if (b == 1) {
-                        //System.out.print(a+" ");
+                        System.out.print(a+" ");
                     }
             }   
         }
