@@ -4,8 +4,16 @@
         "Java\\Class",
         "Java\\Prima",
         "Java\\Prima Optimaized",
-        "Java\\Array"
-    ]
+        "Java\\Array",
+        "Java\\Max Value",
+        "Java\\Jari-Jari",
+        "Java\\Switch Char"
+    ],
+    "files.associations": {
+        "iomanip": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
 
     
 }

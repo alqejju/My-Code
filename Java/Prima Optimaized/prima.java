@@ -22,7 +22,7 @@ public class prima {
                         }
                     }
                     if (b >= a/2 || a <= 3) {
-                        System.out.print(a + " ");
+                        //System.out.print(a + " ");
                     }
             }   
         }
@@ -30,7 +30,6 @@ public class prima {
             
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
-        System.out.println(" ");
-        System.out.println("Time Elapsed : " + timeElapsed + " ms");
+        System.out.println('\n' + "Time Elapsed : " + timeElapsed + " ms");
     }  
 }
