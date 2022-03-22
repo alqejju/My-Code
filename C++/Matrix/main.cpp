@@ -3,10 +3,10 @@
 
 using namespace std;
 
-int matrixAB(int columnA,int rowA,int columnB,int rowB)
+void matrixAB(int columnA,int rowA,int columnB,int rowB)
 {
     int column = columnA,row = rowA,parameter = 0,parameterEnd = 0;
-    int numberA[column][row];
+    int numberA[columnB][rowB];
 
     cout << "A :" << endl;
     for (int a = 0; a < column; a++)
@@ -38,8 +38,8 @@ int matrixAB(int columnA,int rowA,int columnB,int rowB)
         } 
     }
 
-    column = columnB,row = rowB,parameter = 0,parameterEnd = 0;
-    int numberB[column][row];
+    parameter = 0,parameterEnd = 0;
+    int numberB[columnB][rowB];
 
     cout << "B :" << endl;
     for (int a = 0; a < column; a++)
@@ -70,22 +70,58 @@ int matrixAB(int columnA,int rowA,int columnB,int rowB)
             }parameterEnd = 0; 
         } 
     }
-    if (rowA == columnB)
+    system("CLS");
+
+    for (int i = 0; i < columnA; i++)
     {
-        for (int i = 0; i < columnA; i++)
+        /* code */
+    }
+    
+
+
+    //Result
+    cout << endl << endl;parameter = 0;parameterEnd = rowA;
+    if (rowA == columnB)
+    {   
+
+        cout << "A * B  :" << endl;
+        int numberAB[columnB][rowA];
+        for (int i = 0; i < columnB; i++)
         {
+            parameter++;
             for (int j = 0; j < rowA; j++)
             {
-                /* code */
+                for (int k = 0; k < columnB; k++)
+                {
+                    numberAB[i][j] =+ numberA [i][k] * numberB[k][i];
+                    
+                }
             }
             
         }
+        for (int i = 0; i < columnB; i++)
+        {
+            parameter++;
+            for (int j = 0; j < rowA; j++)
+            {
+                cout << "[";cout << setw(3) << right << numberAB[i][j] << "]";
+            }
+            cout << endl;
+        }
+
         
-    } else {
+    }
+    else if (columnA == rowB)
+    {
+        int numberBA[columnA][rowB];
+
+    }
+        
+    
+     else {
         cout << endl << "your Matrix is invalid for Multiplication Operator";
     }
     
-    return 0;
 };
 
 int main()

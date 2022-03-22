@@ -31,5 +31,6 @@ public class prima {
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
         System.out.println('\n' + "Time Elapsed : " + timeElapsed + " ms");
+        
     }  
 }
