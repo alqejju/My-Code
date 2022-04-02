@@ -6,7 +6,6 @@ public class prima {
 
     public static void main(String[] args) 
     {
-        
         int a = 0,b,c;
         Scanner input = new Scanner(System.in); System.out.print("Input Max Value : ");c = input.nextInt();
         Instant start = Instant.now();
@@ -15,15 +14,15 @@ public class prima {
             a++;b = 2;
             if (a % 2 != 0 && a > 1 || a == 2){
                 
-                    while (a%b != 0) {
-                        b++;
-                        if (a%b == 0) {
-                            //System.out.println("Number Parameter " + b);break;
-                        }
+                while (a%b != 0) {
+                    b++;
+                    if (a%b == 0) {
+                        //System.out.println("Number Parameter " + b);break;
                     }
-                    if (b >= a/2 || a <= 3) {
-                        //System.out.print(a + " ");
-                    }
+                }
+                if (b >= a/3+1 || a <= 3) {
+                    System.out.print(a + " ");
+                }
             }   
         }
         input.close();
@@ -32,5 +31,5 @@ public class prima {
         long timeElapsed = Duration.between(start, finish).toMillis();
         System.out.println('\n' + "Time Elapsed : " + timeElapsed + " ms");
         
-    }  
+    }
 }

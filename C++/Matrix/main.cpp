@@ -77,8 +77,6 @@ void matrixAB(int columnA,int rowA,int columnB,int rowB)
         /* code */
     }
     
-
-
     //Result
     cout << endl << endl;parameter = 0;parameterEnd = rowA;
     if (rowA == columnB)
@@ -93,7 +91,7 @@ void matrixAB(int columnA,int rowA,int columnB,int rowB)
             {
                 for (int k = 0; k < columnB; k++)
                 {
-                    numberAB[i][j] =+ numberA [i][k] * numberB[k][i];
+                    numberAB[i][j] += numberA [i][k] * numberB[k][i];
                     
                 }
             }

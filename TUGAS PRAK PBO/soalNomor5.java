@@ -7,6 +7,7 @@ import java.time.Instant;
 public class soalNomor5 {
 
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
         System.out.print("Input min Value of Array : ");int a = input.nextInt();
         System.out.print("Input max Value of Array : ");int b = input.nextInt();
@@ -14,7 +15,9 @@ public class soalNomor5 {
         System.out.println(" ");
         array(a,b,c);
         input.close();
+        
     }
+
     public static void array(int a, int b,int c) {
 
         Instant start = Instant.now();
@@ -26,6 +29,7 @@ public class soalNomor5 {
         }
         max = Arrays.stream(ab).max().getAsInt();
         min = Arrays.stream(ab).min().getAsInt();
+
         System.out.println('\n');
         System.out.println("a. Jumlah Total    : " + total);
         System.out.println("b. Rata - Rata     : " + total / c);
@@ -33,7 +37,6 @@ public class soalNomor5 {
         System.out.println("d. Nilai Terendah  : " + min);
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
-        System.out.println('\n' + "Time Elapsed : " + timeElapsed + " ms");
-        
+        System.out.println('\n' + "Time Elapsed : " + timeElapsed + " ms"); 
     }
 }
