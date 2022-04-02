@@ -20,7 +20,7 @@ public class swithcSample {
                 }
                 
                 break;
-
+                
             case 'c':
                 for ( int i = 55; i <= 64;i++){
                     System.out.print(i + " ");

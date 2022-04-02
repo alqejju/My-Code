@@ -10,6 +10,7 @@ public class prima {
         Scanner input = new Scanner(System.in); System.out.print("Input Max Value : ");c = input.nextInt();
         Instant start = Instant.now();
         for (int i = 0; i < c; i++) {
+            //System.out.println("Perulangan Ke " + i);
             a++;b = a -1;
             if (a % 2 != 0 && a > 1 || a == 2){
                 //System.out.print(a + " ");
@@ -20,7 +21,7 @@ public class prima {
                         }
                     }
                     if (b == 1) {
-                        //System.out.print(a+" ");
+                        System.out.print(a+" ");
                     }
             }   
         }
