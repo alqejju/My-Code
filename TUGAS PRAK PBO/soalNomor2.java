@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class soalNomor2 {
     public static void main(String[] args) {
         int[] num = new int[3];
-        int max = 0,min;
+        int max = 0;
         Scanner input = new Scanner(System.in);
 
         for (int i = 0 ; i < 3;i++){
@@ -12,13 +12,7 @@ public class soalNomor2 {
                 max = num[i];
             }
         }
-        min = num[0];
-        for (int i = 0; i < 3;i++){
-            if (min > num[i]) {
-                min = num [i];
-            }
-        }
-        System.out.println('\n' + "Nilai Terbesar : " + max + '\n' + "Nilai Terkecil : " + min);
+        System.out.println('\n' + "Nilai terbesar : " + max);
         input.close();
     }
 }
