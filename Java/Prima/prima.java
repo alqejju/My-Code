@@ -6,7 +6,7 @@ public class prima {
 
     public static void main(String[] args) 
     {
-        int a = 0,b,c;
+        int a = 0,b,c,total = 0;
         Scanner input = new Scanner(System.in); System.out.print("Input Max Value : ");c = input.nextInt();
         Instant start = Instant.now();
         for (int i = 0; i < c; i++) {
@@ -21,7 +21,8 @@ public class prima {
                         }
                     }
                     if (b == 1) {
-                        System.out.print(a+" ");
+                        //System.out.print(a+" ");
+                        total++;
                     }
             }   
         }
@@ -29,6 +30,7 @@ public class prima {
 
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
+        System.out.println("Total Prime Number = " + total);
         System.out.println(" ");
         System.out.println("Time Elapsed : " + timeElapsed + " ms");
     }  
